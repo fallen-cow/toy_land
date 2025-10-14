@@ -1,0 +1,12 @@
+Toys for Kids - Zabawki dla dzieci - Детские игрушки:
+	Plush Toys - Zabawki Pluszowe - Мягкие Игрушки
+	Plastic toys - Zabawki Plastikowe - Пластковые Игрушки
+	Constructors - Konstruktorzy - Конструкторы 
+	Educational Toys - Zabawki Edukacyjne - Развивающие Игрушки
+	Dolls - Lalki - Куклы
+	Play Sets - Zestawy do Gry - Игровые Наборы
+Tabletop Games - Gry Stołowe - Настольные игры:
+	Card Games - Gry Karciane - Карточные Игры
+	Strategy Games - Gry Strategiczne - Стратегические Игры
+	Board Games - Gry planszowe - Игры на Доске
+	Other Games - Inne Gry - Другие Игры

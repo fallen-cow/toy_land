@@ -1,0 +1,52 @@
+.a-gradient-price {
+    background: linear-gradient(45deg, rgba(255, 0, 0, 0.6), rgba(0, 0, 255, 0.6));
+    background-size: 250% 200%;
+    animation: gradientAnimation 4s ease infinite;
+    height: 100%;
+    margin: 0;
+}
+
+.a-gradient-pay {
+    background: linear-gradient(45deg, rgba(193, 255, 205, 0.6), rgba(255, 255, 255, 0.6));
+    background-size: 150% 100%;
+    animation: gradientAnimation 10s ease infinite;
+    height: 100%;
+    margin: 0;
+}
+
+.a-gradient-more {
+    background: linear-gradient(0deg, rgba(11, 11, 11, 0.6), rgba(38, 38, 38, 0.6));
+    background-size: 150% 100%;
+    animation: gradientAnimation 2s ease infinite;
+    height: 100%;
+    margin: 0;
+}
+
+.a-gradient-confirm {
+    background: linear-gradient(90deg, rgba(255, 255, 255, 0.6), rgba(0, 255, 89, 0.6));
+    background-size: 250% 200%;
+    animation: gradientAnimation 4s ease infinite;
+    height: 100%;
+    margin: 0;
+}
+
+.a-gradient-pass {
+    background: linear-gradient(45deg, rgba(255, 227, 0, 0.6), rgba(202, 88, 0, 0.6));
+    background-size: 150% 100%;
+    animation: gradientAnimation 2s ease infinite;
+    height: 100%;
+    margin: 0;
+}
+
+@keyframes gradientAnimation {
+    0% {
+        background-position: 0% 50%;
+    }
+    50% {
+        background-position: 100% 50%;
+    }
+    100% {
+        background-position: 0% 50%;
+    }
+}
+
