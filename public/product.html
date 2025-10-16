@@ -1,0 +1,1322 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Toy Land - Product Page</title>
+    <link rel="icon" href="images/ico/favicon.ico" type="image/x-icon" />
+
+    <link rel="stylesheet" href="lib/bootstrap/bootstrap.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/animation.css">
+    <link rel="stylesheet" href="css/input.css">
+</head>
+
+<body class="c-container">
+    <!--  Header  -->
+    <header class="row">
+
+        <!--  Menu < SM  -->
+        <div class="col-3 d-block d-sm-none px-4 py-3">
+            <img src="images/svg/menu.svg" class="click-me img-fluid" alt="menu" data-bs-toggle="offcanvas"
+                data-bs-target="#offcanvasMenu" aria-controls="offcanvasMenu">
+        </div>
+
+        <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasMenu" aria-labelledby="offcanvasMenu">
+            <div class="offcanvas-header">
+                <h5 class="offcanvas-title" id="offcanvasExampleLabel">Menu</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+            </div>
+
+            <div class="offcanvas-body">
+                <button type="button" class="btn btn-warning py-2 px-4" data-bs-toggle="modal"
+                    data-bs-target="#accountModal">
+                    <img src="images/svg/user.svg" alt="user">
+                    Account (Sign in / Sign up)
+                </button>
+
+                <button type="button" class="mt-4 btn btn-primary py-2 px-4" data-bs-toggle="modal"
+                    data-bs-target="#categoryModal">
+                    <img src="images/svg/category.svg" alt="category">
+                    Category (Toys for Kids)
+                </button>
+
+                <button type="button" class="mt-4 btn btn-info py-2 px-4" data-bs-toggle="modal"
+                    data-bs-target="#category2Modal">
+                    <img src="images/svg/category.svg" alt="category">
+                    Category (Tabletop Games)
+                </button>
+            </div>
+        </div>
+
+        <!--  Logo and search  -->
+        <div class="d-none d-sm-block col-sm-4 col-lg-3">
+            <!--  -->
+            <a href="index.html">
+                <img src="images/img/store_icon_long.png" class="img-fluid" alt="logo">
+            </a>
+
+            <div class="container mt-4 form-control c-input-search d-none d-lg-block">
+                <div class="d-flex align-items-center shadow-lg p-2 rounded-3">
+                    <img src="images/svg/search.svg" alt="search icon" width="24" height="24" class="mr-2">
+                    <input type="text" class="form-control ms-2 c-input-search" placeholder="Search">
+                </div>
+            </div>
+            <!--  -->
+        </div>
+
+        <!--  Logo < SM  -->
+        <div class="col-6 d-block d-sm-none">
+            <a href="index.html">
+                <div class="d-flex justify-content-center">
+                    <img src="images/img/store_icon.png" width="50%" alt="logo">
+                </div>
+            </a>
+        </div>
+
+        <!--  Categories, buttons and promotions  -->
+        <div class="col-3 col-sm-8 col-lg-9 text-align-center form-floating mt-4 container-fluid d-flex flex-column">
+            <!--  Categories and buttons  -->
+            <div class="row d-flex align-items-center flex-grow-0">
+                <!--  Categories  -->
+                <div class="col-6 d-none d-lg-block container">
+                    <!--  -->
+                    <div class="btn-group rounded-4 mx-1 d-flex c-blue-shadow" role="group">
+                        <button type="button" style="width: 50%" class="c-category-text c-bold-center
+                                    btn btn-lg btn-outline-primary" data-bs-toggle="modal"
+                            data-bs-target="#categoryModal">Toys for Kids</button>
+                        <button type="button" style="width: 50%" class="c-category-text c-bold-center
+                                    btn btn-lg btn-outline-primary" data-bs-toggle="modal"
+                            data-bs-target="#category2Modal">Tabletop Games</button>
+                    </div>
+                    <!--  -->
+                </div>
+
+                <!--  Category (1) Modal -->
+                <div class="modal fade" id="categoryModal" tabindex="-1" aria-hidden="true">
+                    <div class="modal-dialog modal-lg">
+                        <div class="modal-content">
+
+                            <!--  Category (1) Modal Header -->
+                            <div class="modal-header d-flex justify-content-between c-sticky-header">
+                                <div class="d-flex">
+                                    <img src="images/svg/category.svg" class="img-fluid">
+                                    <h1 class="modal-title fs-5 ms-3">Categories - Toys for Kids</h1>
+                                </div>
+                                <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                    aria-label="Close"></button>
+                            </div>
+
+
+                            <!--  Category (1) Modal Body -->
+                            <div class="modal-body my-2">
+
+                                <div class="d-flex justify-content-around">
+                                    <a href="#" class="c-card-size">
+                                        <div class="card">
+                                            <img src="images/img/categories/plush.jpg" class="card-img-top" alt="plush">
+                                            <div class="card-body">
+                                                <h4 class="card-title fw-bold text-center">Plush Toys</h4>
+                                            </div>
+                                        </div>
+                                    </a>
+
+                                    <a href="#" class="c-card-size">
+                                        <div class="card">
+                                            <img src="images/img/categories/plastic.jpg" class="card-img-top"
+                                                alt="plastic">
+                                            <div class="card-body">
+                                                <h4 class="card-title fw-bold text-center">Plastic Toys</h4>
+                                            </div>
+                                        </div>
+                                    </a>
+
+                                </div>
+
+                                <div class="d-flex justify-content-around mt-4">
+
+                                    <a href="#" class="c-card-size">
+                                        <div class="card">
+                                            <img src="images/img/categories/constructor.jpg" class="card-img-top"
+                                                alt="constructors">
+                                            <div class="card-body">
+                                                <h4 class="card-title fw-bold text-center">Constructors</h4>
+                                            </div>
+                                        </div>
+                                    </a>
+
+                                    <a href="#" class="c-card-size">
+                                        <div class="card">
+                                            <img src="images/img/categories/education.jpg" class="card-img-top"
+                                                alt="educational">
+                                            <div class="card-body">
+                                                <h4 class="card-title fw-bold text-center">Educational Toys</h4>
+                                            </div>
+                                        </div>
+                                    </a>
+
+                                </div>
+
+                                <div class="d-flex justify-content-around mt-4">
+
+                                    <a href="#" class="c-card-size">
+                                        <div class="card">
+                                            <img src="images/img/categories/dolls.jpg" class="card-img-top" alt="dolls">
+                                            <div class="card-body">
+                                                <h4 class="card-title fw-bold text-center">Dolls</h4>
+                                            </div>
+                                        </div>
+                                    </a>
+
+                                    <a href="#" class="c-card-size">
+                                        <div class="card">
+                                            <img src="images/img/categories/set.jpg" class="card-img-top" alt="set">
+                                            <div class="card-body">
+                                                <h4 class="card-title fw-bold text-center">Play Sets</h4>
+                                            </div>
+                                        </div>
+                                    </a>
+
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
+
+                <!--  Category (2) Modal -->
+                <div class="modal fade" id="category2Modal" tabindex="-1" aria-hidden="true">
+                    <div class="modal-dialog modal-lg">
+                        <div class="modal-content">
+
+                            <!--  Category (2) Modal Header -->
+                            <div class="modal-header d-flex justify-content-between c-sticky-header">
+                                <div class="d-flex">
+                                    <img src="images/svg/category.svg" class="img-fluid">
+                                    <h1 class="modal-title fs-5 ms-3">Categories - Tabletop Games</h1>
+                                </div>
+                                <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                    aria-label="Close"></button>
+                            </div>
+
+
+                            <!--  Category (2) Modal Body -->
+                            <div class="modal-body my-2">
+
+                                <div class="d-flex justify-content-around">
+
+                                    <a href="#" class="c-card-size">
+                                        <div class="card">
+                                            <img src="images/img/categories/card.jpg" class="card-img-top" alt="card">
+                                            <div class="card-body">
+                                                <h4 class="card-title fw-bold text-center">Card Games</h4>
+                                            </div>
+                                        </div>
+                                    </a>
+
+                                    <a href="#" class="c-card-size">
+                                        <div class="card">
+                                            <img src="images/img/categories/strategy.jpg" class="card-img-top"
+                                                alt="strategy">
+                                            <div class="card-body">
+                                                <h4 class="card-title fw-bold text-center">Strategy Games</h4>
+                                            </div>
+                                        </div>
+                                    </a>
+
+                                </div>
+
+                                <div class="d-flex justify-content-around mt-4">
+
+                                    <a href="#" class="c-card-size">
+                                        <div class="card">
+                                            <img src="images/img/categories/board.jpg" class="card-img-top" alt="board">
+                                            <div class="card-body">
+                                                <h4 class="card-title fw-bold text-center">Board Games</h4>
+                                            </div>
+                                        </div>
+                                    </a>
+
+                                    <a href="#" class="c-card-size">
+                                        <div class="card">
+                                            <img src="images/img/categories/other.jpg" class="card-img-top" alt="other">
+                                            <div class="card-body">
+                                                <h4 class="card-title fw-bold text-center">Other Games</h4>
+                                            </div>
+                                        </div>
+                                    </a>
+
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!--  Buttons  -->
+                <div class="col-12 col-lg-6">
+                    <div class="row d-flex align-items-center">
+                        <!--  Language selection  -->
+                        <div class="d-none col-6 col-lg-4 col-xxl-6 d-sm-flex align-items-center">
+                            <!--  -->
+                            <img src="images/img/language_icon.png" alt="search icon"
+                                class="col-sm-2 col-xxl-3 d-lg-none d-xxl-block">
+
+                            <select class="click-me form-select c-category-text c-bold-center
+                                c-red-shadow rounded-4 border border-danger-subtle mx-2 ">
+                                <option value="1">EN</option>
+                                <option value="2">PL</option>
+                                <option value="3">RU</option>
+                            </select>
+                            <!--  -->
+                        </div>
+
+                        <!--  User  -->
+                        <div class="col-sm-3 col-lg-4 col-xxl-3 d-none d-sm-flex justify-content-center">
+                            <!--  -->
+                            <div class="col-sm-8 col-md-6  col-lg-7 col-xl-6 c-yellow-shadow rounded-5">
+                                <div class="p-3 c-yellow-shadow-inset container rounded-5">
+                                    <img src="images/svg/user.svg" alt="user icon" class="click-me" width="100%"
+                                        data-bs-toggle="modal" data-bs-target="#accountModal">
+                                </div>
+                            </div>
+                            <!--  -->
+                        </div>
+
+                        <!--  Account Modal -->
+                        <div class="modal fade" id="accountModal" tabindex="-1" aria-hidden="true">
+                            <div class="modal-dialog modal-lg">
+                                <div class="modal-content">
+
+                                    <!--  Account Modal Header -->
+                                    <div class="modal-header d-flex justify-content-between">
+                                        <div class="d-flex">
+                                            <img src="images/svg/user.svg" class="img-fluid">
+                                            <h1 class="modal-title fs-5 ms-3">Account</h1>
+                                        </div>
+                                        <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                            aria-label="Close"></button>
+                                    </div>
+
+
+                                    <!--  Account Modal Body -->
+                                    <div class="modal-body my-2">
+
+                                        <!--  Switch -->
+                                        <div class="btn-group rounded-5 mx-3 d-flex" role="group">
+                                            <button id="sign_in_button" type="button" style="width: 50%" class="c-category-text rounded-start-5 c-bold-center btn btn-lg
+                                                                    bg-danger text-white border border-2 border-black"
+                                                onclick="switchContent(true)">
+                                                Sign in
+                                            </button>
+                                            <button id="sign_up_button" type="button" style="width: 50%" class="c-category-text rounded-end-5 c-bold-center btn btn-lg
+                                                                    bg-warning-subtle text-body-secondary"
+                                                onclick="switchContent(false)">
+                                                Sign up
+                                            </button>
+                                        </div>
+
+                                        <div class="container mt-4 mx-1">
+
+                                            <!--  Sign In -->
+                                            <div id="sign_in_content" class="collapse show">
+                                                <div class="row">
+
+                                                    <div class="col-6 col-lg-7">
+                                                        <div class="inputBox">
+                                                            <input type="email" class="fw-bold"
+                                                                placeholder="Write here...">
+                                                            <span>Email: </span>
+                                                        </div>
+                                                    </div>
+
+                                                    <div class="col-6 col-lg-5 d-flex align-items-stretch">
+                                                        <select
+                                                            class="click-me form-select border-white text-end fs-3 ms-2 fw-bold">
+                                                            <option value="1">gmail.com</option>
+                                                            <option value="2">yahoo.com</option>
+                                                            <option value="3">hotmail.com</option>
+                                                            <option value="4">aol.com</option>
+                                                            <option value="5">msn.com</option>
+                                                            <option value="6">outlook.com</option>
+                                                        </select>
+                                                    </div>
+
+                                                </div>
+
+                                                <p class="text-center fw-bold text-black fs-4 my-3">or</p>
+
+                                                <div class="inputBox">
+                                                    <input type="text" class="fw-bold" placeholder="Write here...">
+                                                    <span>Login: </span>
+                                                </div>
+
+                                                <div class="row mt-3">
+                                                    <div
+                                                        class="col-lg-6 mt-3 mt-lg-0 order-3 order-lg-1 d-flex align-items-center">
+                                                        <div class="inputBox me-2">
+                                                            <input type="password" class="fw-bold"
+                                                                placeholder="Write here...">
+                                                            <span>Password: </span>
+                                                        </div>
+                                                    </div>
+
+                                                    <div
+                                                        class="col-2 col-lg-1 order-1 order-lg-2 d-flex align-items-center">
+                                                        <img src="images/svg/info.svg" class="img-fluid" alt="info"
+                                                            style="max-width: 64px;">
+                                                    </div>
+                                                    <div class="col-10 col-lg-5 order-2 order-lg-3 ps-1">
+                                                        <p class="text-center fw-bold text-black fs-4">Password
+                                                            requirements</p>
+
+                                                        <p class="text-dark fs-5 mt-2">
+                                                            PW length from <b>10</b> characters,<br>
+                                                            <span class="text-danger">UPPER CASE LETTER</span>
+                                                            (<b>A-Z</b>),<br>
+                                                            <span class="text-success">lower case letter</span>
+                                                            (<b>a-z</b>),<br>
+                                                            <span class="text-warning">Special character</span> (e.g.
+                                                            <b>&</b>)
+                                                        </p>
+                                                    </div>
+                                                </div>
+                                            </div>
+
+                                            <!--  Sign Up -->
+                                            <div id="sign_up_content" class="collapse">
+
+                                                <div class="row">
+
+                                                    <div class="col-6 col-lg-7">
+                                                        <div class="inputBox">
+                                                            <input type="email" class="fw-bold"
+                                                                placeholder="Write here...">
+                                                            <span>Email: </span>
+                                                        </div>
+                                                    </div>
+
+                                                    <div class="col-6 col-lg-5 d-flex align-items-stretch">
+                                                        <select
+                                                            class="click-me form-select border-white text-end fs-3 ms-2 fw-bold">
+                                                            <option value="1">gmail.com</option>
+                                                            <option value="2">yahoo.com</option>
+                                                            <option value="3">hotmail.com</option>
+                                                            <option value="4">aol.com</option>
+                                                            <option value="5">msn.com</option>
+                                                            <option value="6">outlook.com</option>
+                                                        </select>
+                                                    </div>
+
+                                                    <div class="row mt-4 d-flex justify-content-between">
+
+                                                        <div class="col-6">
+                                                            <div class="inputBox">
+                                                                <input type="password" class="fw-bold"
+                                                                    placeholder="Write here...">
+                                                                <span>Password: </span>
+                                                            </div>
+                                                        </div>
+
+                                                        <div class="col-6">
+                                                            <div class="inputBox">
+                                                                <input type="password" class="fw-bold"
+                                                                    placeholder="Write here...">
+                                                                <span>Confirm: </span>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+
+                                                    <div class="row mt-3">
+
+                                                        <div class="col-2 col-lg-1 d-flex align-items-center">
+                                                            <img src="images/svg/info.svg" class="img-fluid" alt="info"
+                                                                style="max-width: 64px;">
+                                                        </div>
+
+                                                        <div class="col-10 col-lg-3 d-flex align-items-center">
+                                                            <p class="text-center fw-bold text-black fs-4 ms-1">Password
+                                                                requirements</p>
+                                                        </div>
+
+                                                        <div class="col-lg-8">
+                                                            <p class="text-dark fs-5 mt-2 ms-2">
+                                                                PW length from <b>10</b> characters,<br>
+                                                                <span class="text-danger">UPPER CASE LETTER</span>
+                                                                (<b>A-Z</b>), <br class="d-lg-none">
+                                                                <span class="text-success">lower case letter</span>
+                                                                (<b>a-z</b>),<br>
+                                                                <span class="text-warning">Special character</span>
+                                                                (e.g. <b>&</b>)
+                                                            </p>
+                                                        </div>
+                                                    </div>
+
+                                                    <div class="row mt-4 d-flex justify-content-between">
+
+                                                        <div class="col-6">
+                                                            <div class="inputBox">
+                                                                <input type="text" class="fw-bold"
+                                                                    placeholder="Write here...">
+                                                                <span>Name: </span>
+                                                            </div>
+                                                        </div>
+
+                                                        <div class="col-6">
+                                                            <div class="inputBox">
+                                                                <input type="text" class="fw-bold"
+                                                                    placeholder="Write here...">
+                                                                <span>Last name: </span>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+
+                                                    <div class="inputBox mt-4">
+                                                        <input type="text" class="fw-bold" placeholder="Write here...">
+                                                        <span>Login: </span>
+                                                    </div>
+
+                                                </div>
+
+                                            </div>
+                                        </div>
+
+
+
+                                        <!--  Temporary js code -->
+                                        <!--  Temporary js code -->
+                                        <!--  Temporary js code -->
+                                        <!--   -->
+
+                                        <script>
+                                            function switchContent(isLog) {
+                                                const signInContent = document.getElementById("sign_in_content");
+                                                const signUpContent = document.getElementById("sign_up_content");
+
+                                                const signInButton = document.getElementById("sign_in_button");
+                                                const signUpButton = document.getElementById("sign_up_button");
+
+                                                function switchContent(contentShow, contentHide, buttonShow, buttonHide) {
+                                                    if (!contentShow.classList.contains("show")) {
+                                                        contentHide.classList.remove("show");
+                                                        contentShow.classList.add("show");
+
+                                                        buttonHide.classList.remove("border", "border-2", "border-black");
+                                                        buttonHide.classList.replace("text-white", "text-body-secondary")
+
+                                                        if (isLog) {
+                                                            buttonHide.classList.replace("bg-warning", "bg-warning-subtle");
+                                                            buttonShow.classList.replace("bg-danger-subtle", "bg-danger");
+                                                        } else {
+                                                            buttonHide.classList.replace("bg-danger", "bg-danger-subtle");
+                                                            buttonShow.classList.replace("bg-warning-subtle", "bg-warning");
+                                                        }
+
+                                                        buttonShow.classList.add("border", "border-2", "border-black");
+                                                    }
+                                                }
+
+                                                if (isLog)
+                                                    switchContent(signInContent, signUpContent, signInButton, signUpButton);
+                                                else
+                                                    switchContent(signUpContent, signInContent, signUpButton, signInButton);
+                                            }
+
+                                            <!-- Buttons contain: onclick="switchContent(boolean)" -->
+                                        </script>
+
+                                        <!--   -->
+                                        <!--  Temporary js code -->
+                                        <!--  Temporary js code -->
+                                        <!--  Temporary js code -->
+
+
+
+                                    </div>
+
+
+                                    <div class="modal-footer d-flex justify-content-center my-2">
+
+                                        <!--  Continue Button -->
+                                        <a href="account.html">
+                                            <button type="button"
+                                                class="btn border border-success rounded-3
+                                                            a-gradient-confirm py-3 px-5 fs-2 fw-bold">Continue</button>
+                                        </a>
+
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!--  Basket  -->
+                        <div class="col-12 col-sm-3 col-lg-4 col-xxl-3">
+                            <!--  -->
+                            <div class="col-8 col-md-6 col-lg-7 col-xl-6 c-green-shadow rounded-5">
+                                <div class="p-3 c-green-shadow-inset container rounded-5">
+
+                                    <img src="images/svg/cart.svg" alt="basket icon" class="click-me" width="100%"
+                                        data-bs-toggle="modal" data-bs-target="#cartModal">
+                                </div>
+                            </div>
+                            <!--  -->
+                        </div>
+
+                        <!--  Basket Modal -->
+                        <div class="modal fade" id="cartModal" tabindex="-1" aria-hidden="true">
+                            <div class="modal-dialog modal-xl">
+                                <div class="modal-content">
+
+                                    <!--  Basket Modal Header -->
+                                    <div class="modal-header d-flex justify-content-between">
+                                        <div class="d-flex">
+                                            <img src="images/svg/cart.svg" class="img-fluid">
+                                            <h1 class="modal-title fs-5 ms-3">Cart</h1>
+                                        </div>
+                                        <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                            aria-label="Close"></button>
+                                    </div>
+
+                                    <!--  Basket Modal Body -->
+                                    <div class="modal-body my-2">
+
+                                        <!--  Item 1 -->
+                                        <div class="container border border-dark rounded-2 p-3">
+                                            <div class="row">
+
+                                                <!--  Image and discount -->
+                                                <div
+                                                    class="col-5 col-lg-3 d-flex align-items-center justify-content-end">
+                                                    <span
+                                                        class="rounded-4 bg-danger p-2 text-white me-2 d-none d-xl-inline">-28%</span>
+
+                                                    <div class="col col-xl-8">
+                                                        <img src="tmp/pluszak2.png" class="img-fluid rounded-3"
+                                                            alt="item">
+                                                    </div>
+                                                </div>
+
+                                                <!--  Name -->
+                                                <div class="col-5 col-lg-8">
+                                                    <p class="fw-bold text-black fs-4 fs-lg-2">Teddy bear (prime
+                                                        F778/K441)</p>
+                                                </div>
+
+                                                <!-- Trash -->
+                                                <div class="col-2 col-lg-1 d-flex justify-content-end">
+                                                    <div class="col-8">
+                                                        <img src="images/svg/trash.svg" class="img-fluid" alt="item">
+                                                    </div>
+                                                </div>
+                                            </div>
+
+                                            <div class="d-flex justify-content-end">
+                                                <div
+                                                    class="col col-lg-6 col-xl-4 row mt-3 mt-lg-0 d-flex align-items-center">
+                                                    <div class="col-5 col-lg-6">
+                                                        <div class="d-flex justify-content-between text-center">
+
+                                                            <span class="fs-1">-</span>
+
+                                                            <div class="border rounded-2 px-4 py-2">
+                                                                <span class="fs-3">2</span>
+                                                            </div>
+
+                                                            <span class="fs-1">+</span>
+                                                        </div>
+                                                    </div>
+
+                                                    <div class="col-7 col-lg-6">
+                                                        <div class="text-end">
+                                                            <p class="fs-4 text-secondary"><s>63,98 zł</s></p>
+                                                            <p class="fs-2 text-danger fw-bold">45,80 zł</p>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <!--  Item 2 -->
+                                        <div class="container border border-dark rounded-2 p-3 mt-4">
+                                            <div class="row">
+
+                                                <!--  Image and discount -->
+                                                <div
+                                                    class="col-5 col-lg-3 d-flex align-items-center justify-content-end">
+                                                    <span
+                                                        class="rounded-4 bg-danger p-2 text-white me-2 d-none">-28%</span>
+
+                                                    <div class="col col-xl-8">
+                                                        <img src="tmp/roz_pluszak2.png" class="img-fluid rounded-3"
+                                                            alt="item">
+                                                    </div>
+                                                </div>
+
+                                                <!--  Name -->
+                                                <div class="col-5 col-lg-8">
+                                                    <p class="fw-bold text-black fs-2">Red roses, Teddy bear (prime
+                                                        H118/L393)</p>
+                                                </div>
+
+                                                <!-- Trash -->
+                                                <div class="col-2 col-lg-1 d-flex justify-content-end">
+                                                    <div class="col-8">
+                                                        <img src="images/svg/trash.svg" class="img-fluid" alt="item">
+                                                    </div>
+                                                </div>
+                                            </div>
+
+                                            <div class="d-flex justify-content-end">
+                                                <div
+                                                    class="col col-lg-6 col-xl-4 row mt-3 mt-lg-0 d-flex align-items-center">
+                                                    <div class="col-5 col-lg-6">
+                                                        <div class="d-flex justify-content-between text-center">
+
+                                                            <span class="fs-1">-</span>
+
+                                                            <div class="border rounded-2 px-4 py-2">
+                                                                <span class="fs-3">1</span>
+                                                            </div>
+
+                                                            <span class="fs-1">+</span>
+                                                        </div>
+                                                    </div>
+
+                                                    <div class="col-7 col-lg-6">
+                                                        <div class="text-end">
+                                                            <p class="fs-4 text-secondary d-none"><s></s></p>
+                                                            <p class="fs-2 text-dark fw-bold">17,99 zł</p>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="modal-footer my-2">
+
+                                        <!--  Summary 63.79-->
+                                        <div class="container p-3 d-lg-flex justify-content-between align-items-center">
+
+                                            <button type="button" class="btn btn-outline-dark p-4 d-none d-lg-inline"
+                                                data-bs-dismiss="modal">Continue shopping</button>
+
+                                            <div class="d-flex align-items-center p-4 a-gradient-pay
+                                                            rounded-3 border border-success">
+                                                <p class="fw-bold text-dark fs-1">63,79 zł</p>
+                                                <a href="order.html">
+                                                    <button type="button" class="btn btn-outline-success p-4 ms-4">Place
+                                                        an order</button>
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+
+            <!--  Promotions  -->
+            <div class="mt-4 flex-grow-1 d-none d-lg-flex flex-column">
+                <div class="row w-100 h-100">
+                    <div id="carouselPromotion" class="carousel slide" data-bs-ride="carousel">
+                        <!--  Promotion items  -->
+                        <div class="carousel-inner">
+                            <!--  -->
+                            <div class="carousel-item active">
+                                <img src="images/img/prom1_img.png" class="d-block w-100" alt="Promotion Bear">
+                            </div>
+
+                            <div class="carousel-item">
+                                <img src="images/img/prom2_img.png" class="d-block w-100" alt="Promotion Halloween">
+                            </div>
+
+                            <div class="carousel-item">
+                                <img src="images/img/prom3_img.png" class="d-block w-100" alt="Promotion Christmas">
+                            </div>
+                            <!--  -->
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+
+    <!--  Header (down) SM - LG  -->
+    <div class="d-block d-lg-none mt-3 px-1 px-sm-5">
+
+        <!--  Promotions < lg -->
+        <div class="d-flex flex-column">
+            <div class="row">
+                <div id="carouselPromotionSM" class="carousel slide" data-bs-ride="carousel">
+                    <!--  Promotion items  -->
+                    <div class="carousel-inner">
+                        <!--  -->
+                        <div class="carousel-item active">
+                            <img src="images/img/prom1_img.png" class="d-block w-100" alt="Promotion Bear">
+                        </div>
+
+                        <div class="carousel-item">
+                            <img src="images/img/prom2_img.png" class="d-block w-100" alt="Promotion Halloween">
+                        </div>
+
+                        <div class="carousel-item">
+                            <img src="images/img/prom3_img.png" class="d-block w-100" alt="Promotion Christmas">
+                        </div>
+                        <!--  -->
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+        <div class="btn-group rounded-4 mt-3 mx-3 mx-md-5 d-flex c-blue-shadow" role="group">
+            <button type="button" style="width: 50%" class="c-category-text c-bold-center
+                               btn btn-lg btn-outline-primary" data-bs-toggle="modal"
+                data-bs-target="#categoryModal">Toys for Kids</button>
+            <button type="button" style="width: 50%" class="c-category-text c-bold-center
+                               btn btn-lg btn-outline-primary" data-bs-toggle="modal"
+                data-bs-target="#category2Modal">Tabletop Games</button>
+        </div>
+    </div>
+
+    <div class="container d-block d-lg-none mt-4 form-control c-input-search">
+        <div class="d-flex align-items-center shadow-lg p-2 rounded-3">
+            <img src="images/svg/search.svg" alt="search icon" width="24" height="24" class="mr-2">
+            <input type="text" class="form-control ms-2 c-input-search" placeholder="Search">
+        </div>
+    </div>
+
+
+    <!--  Separator  -->
+    <hr class="mt-3 mt-sm-5">
+
+    <!--  Body  -->
+    <main class="my-3 my-sm-5">
+
+        <!--  Product data  -->
+        <div class="shadow-lg mx-2 mx-md-5 p-2 rounded-4">
+            <div class="row mt-3">
+                <!--  Carousel (product image)  -->
+                <div class="col-12 col-lg-5 row">
+                    <!--    -->
+                    <div class="col-2 d-flex align-items-center justify-content-center">
+                        <button type="button" class="btn btn-dark text-center" data-bs-target="#carouselProductImage"
+                            data-bs-slide="prev">
+                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        </button>
+                    </div>
+
+                    <div class="col-8 d-flex align-items-center justify-content-center">
+                        <div id="carouselProductImage" class="carousel slide w-60">
+                            <div class="carousel-indicators">
+                                <button type="button" data-bs-target="#carouselProductImage" data-bs-slide-to="0"
+                                    class="active" aria-current="true" aria-label="Slide 1"></button>
+                                <button type="button" data-bs-target="#carouselProductImage" data-bs-slide-to="1"
+                                    aria-label="Slide 2"></button>
+                            </div>
+                            <div class="carousel-inner">
+                                <div class="carousel-item active">
+                                    <img src="tmp/pluszak.png" class="d-block w-100 rounded-2" alt="product image 1">
+                                </div>
+                                <div class="carousel-item">
+                                    <img src="tmp/pluszak2.png" class="d-block w-100 rounded-2" alt="product image 2">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-2 d-flex align-items-center justify-content-center">
+                        <button type="button" class="btn btn-dark rounded-2" data-bs-target="#carouselProductImage"
+                            data-bs-slide="next">
+                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        </button>
+                    </div>
+                    <!--    -->
+                </div>
+
+                <!--  Product info  -->
+                <div class="mt-3 mt-lg-0 col-lg-7">
+                    <!--    -->
+                    <div class="d-flex justify-content-between">
+                        <!--  Name  -->
+                        <p class="fw-bold text-dark fs-2">Teddy bear (prime F778/K441)</p>
+
+                        <div class="text-end">
+                            <!--  Like image  -->
+                            <img src="images/svg/like.svg" class="img-fluid click-me" alt="like"
+                                style="max-width: 64px;">
+
+                            <!--  Product code  -->
+                            <p class="fw-bold text-dark text-end fs-6 mt-1">Product code: 412863924</p>
+                        </div>
+                    </div>
+
+
+                    <hr>
+
+                    <div class="d-flex flex-column">
+
+                        <!--  Rating and sales info  -->
+                        <div class="row order-3 order-lg-1">
+
+                            <!--  Rating  -->
+                            <div class="col d-flex align-items-center">
+                                <!--    -->
+                                <!--  Rating image  -->
+                                <img src="images/svg/star.svg" class="img-fluid click-me" alt="rating">
+
+                                <!--  Rating info  -->
+                                <div class="ms-3">
+                                    <!--  Score  -->
+                                    <div class="d-flex">
+                                        <span class="text-success fs-3 fw-bold">4.9</span>
+                                        <span class="text-dark fs-3">/5</span>
+                                    </div>
+
+                                    <!--  Number of ratings  -->
+                                    <p class="fs-6 text-dark"><span class="text-black fw-bold">6 631</span> ratings</p>
+                                </div>
+                            </div>
+
+                            <!--  Number of purchasers  -->
+                            <div class="col">
+                                <p class="c-category-text text-dark fw-bold text-end">This product has already been
+                                    bought by <span class="text-success">14&nbsp;241</span> people</p>
+                            </div>
+                        </div>
+
+                        <hr class="order-2">
+
+                        <div class="row d-flex justify-content-end order-1 order-lg-3">
+                            <!--  Price  -->
+                            <div class=" col-12 col-xxl-8 d-flex align-items-end">
+                                <!--  Standard price  -->
+                                <p class="fs-1 text-secondary"><s>31.99 zł</s></p>
+
+                                <!--  Promotional price  -->
+                                <div class="ms-3 p-2 rounded-5 a-gradient-price">
+                                    <p class="c-huge-text text-white fw-bold">22.90 zł</p>
+                                </div>
+                            </div>
+
+                            <!--  Basket  -->
+                            <div class="col-8 col-xxl-4 d-flex align-items-center justify-content-end ps-2 my-3">
+                                <button type="button" class="btn rounded-2 p-3 d-inline bg-success"
+                                    data-bs-toggle="modal" data-bs-target="#cartModal">
+                                    <img src="images/svg/cart_w.svg" class="img-fluid d-inline" alt="item">
+                                    <p class="fs-4 text-light align-items-center ms-3 d-inline">Add to Cart</p>
+                                </button>
+                            </div>
+                        </div>
+                        <!--    -->
+                    </div>
+                </div>
+            </div>
+
+            <!--  Description and features  -->
+            <div class="row m-3 mt-5">
+                <!--  Description  -->
+                <div class="col-12 col-sm me-sm-4">
+                    <!--    -->
+                    <p class="fs-1 text-black fw-bold">Description</p>
+
+                    <p class="fs-6 text-dark mt-3">
+                        This plush teddy bear is the perfect companion for warm hugs and cozy evenings!
+                        Soft and pleasant to the touch, it will be not only an excellent friend for your
+                        child but also a stylish addition to your interior. Thanks to high-quality filling
+                        and durable stitching, this bear will last a long time, keeping its shape and
+                        appearance. Suitable for children of all ages.
+                    </p>
+                    <!--    -->
+                </div>
+
+                <!--  Features  -->
+                <div class="col-sm ms-sm-4 mt-3 mt-sm-0">
+                    <!--    -->
+                    <p class="fs-1 text-start text-sm-end text-black fw-bold">Features</p>
+
+                    <div class="line-between mt-1">
+                        <!--    -->
+                        <p class="fs-5 text-black fw-bold">Type</p>
+
+                        <span class="line"></span>
+
+                        <p class="fs-5 text-dark">Plush Toys</p>
+                        <!--    -->
+                    </div>
+
+                    <div class="line-between mt-1">
+                        <!--    -->
+                        <p class="fs-5 text-black fw-bold">Toy height</p>
+
+                        <span class="line"></span>
+
+                        <p class="fs-5 text-dark">23 cm</p>
+                        <!--    -->
+                    </div>
+
+                    <div class="line-between mt-1">
+                        <!--    -->
+                        <p class="fs-5 text-black fw-bold">Age</p>
+
+                        <span class="line"></span>
+
+                        <p class="fs-5 text-dark">From 3 y.o.</p>
+                        <!--    -->
+                    </div>
+
+                    <div class="line-between mt-1">
+                        <!--    -->
+                        <p class="fs-5 text-black fw-bold">Color</p>
+
+                        <span class="line"></span>
+
+                        <p class="fs-5 text-dark">Brown</p>
+                        <!--    -->
+                    </div>
+
+                    <div class="line-between mt-1">
+                        <!--    -->
+                        <p class="fs-5 text-black fw-bold">Topic</p>
+
+                        <span class="line"></span>
+
+                        <p class="fs-5 text-dark">Animal</p>
+                        <!--    -->
+                    </div>
+                    <!--    -->
+                </div>
+            </div>
+        </div>
+
+        <div class="my-4 my-sm-5">
+            <!--  Similar products  -->
+            <div class="shadow-lg mx-2 mx-lg-5 p-2 rounded-4">
+                <!--  List of sales  -->
+                <div class="row m-3">
+                    <!--  Items  -->
+                    <div class="col-6 col-sm px-1 d-flex align-items-stretch ">
+                        <div class="border border-top-0 border-dark-subtle p-2 d-flex flex-column">
+                            <div class="flex-grow-0">
+                                <!--    -->
+                                <!--  Like and status  -->
+                                <div class="d-flex flex-row justify-content-between">
+                                    <!--    -->
+                                    <img src="images/svg/new.svg" alt="item" width="15%">
+
+                                    <img class="click-me" src="images/svg/like.svg" alt="item" width="15%">
+                                    <!--    -->
+                                </div>
+
+                                <a href="product.html">
+                                    <!--  Image  -->
+                                    <img src="tmp/pluszak.png" class="img-fluid rounded-4 mt-3" alt="item">
+
+                                    <!--  Name  -->
+                                    <p class="text-start fw-bold text-secondary-emphasis fs-6 m-1">Teddy bear (prime
+                                        F778/K441)</p>
+                                </a>
+                            </div>
+
+                            <div class="px-1 flex-grow-1 d-flex flex-column justify-content-end">
+
+                                <!--  Price  -->
+                                <div>
+                                    <p class="fs-5 text-secondary float-xxl-end pt-xxl-2"><s>31,99 zł</s></p>
+                                    <p class="fs-3 text-black fw-bold">22,90 zł</p>
+                                </div>
+
+                                <!--  Availability and basket  -->
+                                <div class="d-flex flex-column flex-md-row m-1 me-2">
+                                    <!--    -->
+                                    <p class="fs-6 text-success align-self-md-end col-md-10">In stock</p>
+
+                                    <img class="click-me col-3 col-md-2 align-self-end" src="images/svg/cart.svg"
+                                        alt="basket icon" data-bs-toggle="modal" data-bs-target="#cartModal">
+                                    <!--    -->
+                                </div>
+                            </div>
+                            <!--    -->
+                        </div>
+                    </div>
+
+                    <div class="col-6 col-sm px-1 d-flex align-items-stretch ">
+                        <div class="border border-top-0 border-dark-subtle p-2 d-flex flex-column">
+                            <div class="flex-grow-0">
+                                <!--    -->
+                                <!--  Like and status  -->
+                                <div class="d-flex flex-row justify-content-between">
+                                    <!--    -->
+                                    <img src="images/svg/new.svg" alt="item" width="15%">
+
+                                    <img class="click-me" src="images/svg/like.svg" alt="item" width="15%">
+                                    <!--    -->
+                                </div>
+
+                                <a href="product.html">
+                                    <!--  Image  -->
+                                    <img src="tmp/pluszak.png" class="img-fluid rounded-4 mt-3" alt="item">
+
+                                    <!--  Name  -->
+                                    <p class="text-start fw-bold text-secondary-emphasis fs-6 m-1">Teddy bear (prime
+                                        F778/K441)</p>
+                                </a>
+                            </div>
+
+                            <div class="px-1 flex-grow-1 d-flex flex-column justify-content-end">
+
+                                <!--  Price  -->
+                                <p class="fs-3 text-black fw-bold">27,80 zł</p>
+
+                                <!--  Availability and basket  -->
+                                <div class="d-flex flex-column flex-md-row m-1 me-2">
+                                    <!--    -->
+                                    <p class="fs-6 c-color-warning align-self-md-end col-10">Running low</p>
+
+                                    <img class="click-me col-3 col-md-2 align-self-end" src="images/svg/cart.svg"
+                                        alt="basket icon" data-bs-toggle="modal" data-bs-target="#cartModal">
+                                    <!--    -->
+                                </div>
+                            </div>
+                            <!--    -->
+                        </div>
+                    </div>
+
+                    <div class="col-6 col-sm px-1 d-flex align-items-stretch ">
+                        <div class="border border-top-0 border-dark-subtle p-2 d-flex flex-column">
+                            <div class="flex-grow-0">
+                                <!--    -->
+                                <!--  Like and status  -->
+                                <div class="d-flex flex-row justify-content-between">
+                                    <!--    -->
+                                    <img src="images/svg/new.svg" alt="item" width="15%">
+
+                                    <img class="click-me" src="images/svg/like.svg" alt="item" width="15%">
+                                    <!--    -->
+                                </div>
+
+                                <a href="product.html">
+                                    <!--  Image  -->
+                                    <img src="tmp/pluszak.png" class="img-fluid rounded-4 mt-3" alt="item">
+
+                                    <!--  Name  -->
+                                    <p class="text-start fw-bold text-secondary-emphasis fs-6 m-1">Teddy bear (prime
+                                        F778/K441)</p>
+                                </a>
+                            </div>
+
+                            <div class="px-1 flex-grow-1 d-flex flex-column justify-content-end">
+
+                                <!--  Price  -->
+                                <p class="fs-3 text-black fw-bold">27,80 zł</p>
+
+                                <!--  Availability and basket  -->
+                                <div class="d-flex flex-column flex-md-row m-1 me-2">
+                                    <!--    -->
+                                    <p class="fs-6 c-color-danger align-self-md-end col-10">Limited stock</p>
+
+                                    <img class="click-me col-3 col-md-2 align-self-end" src="images/svg/cart.svg"
+                                        alt="basket icon" data-bs-toggle="modal" data-bs-target="#cartModal">
+                                    <!--    -->
+                                </div>
+                            </div>
+                            <!--    -->
+                        </div>
+                    </div>
+
+                    <div class="col-6 col-sm px-1 d-flex d-sm-none d-md-flex align-items-stretch ">
+                        <div class="border border-top-0 border-dark-subtle p-2 d-flex flex-column">
+                            <div class="flex-grow-0">
+                                <!--    -->
+                                <!--  Like and status  -->
+                                <div class="d-flex flex-row justify-content-between">
+                                    <!--    -->
+                                    <img src="images/svg/new.svg" alt="item" width="15%">
+
+                                    <img class="click-me" src="images/svg/like.svg" alt="item" width="15%">
+                                    <!--    -->
+                                </div>
+
+                                <a href="product.html">
+                                    <!--  Image  -->
+                                    <img src="tmp/pluszak.png" class="img-fluid rounded-4 mt-3" alt="item">
+
+                                    <!--  Name  -->
+                                    <p class="text-start fw-bold text-secondary-emphasis fs-6 m-1">Teddy bear (prime
+                                        F778/K441)</p>
+                                </a>
+                            </div>
+
+                            <div class="px-1 flex-grow-1 d-flex flex-column justify-content-end">
+
+                                <!--  Price  -->
+                                <p class="fs-3 text-black fw-bold">27,80 zł</p>
+
+                                <!--  Availability and basket  -->
+                                <div class="d-flex flex-column flex-md-row m-1 me-2">
+                                    <!--    -->
+                                    <p class="fs-6 text-dark align-self-md-end col-10">Out of stock</p>
+
+                                    <img class="click-me col-3 col-md-2 align-self-end" src="images/svg/cart.svg"
+                                        alt="basket icon" data-bs-toggle="modal" data-bs-target="#cartModal">
+                                    <!--    -->
+                                </div>
+                            </div>
+                            <!--    -->
+                        </div>
+                    </div>
+
+                    <div class="col px-1 d-lg-flex d-none align-items-stretch ">
+                        <div class="border border-top-0 border-dark-subtle p-2 d-flex flex-column">
+                            <div class="flex-grow-0">
+                                <!--    -->
+                                <!--  Like and status  -->
+                                <div class="d-flex flex-row justify-content-between">
+                                    <!--    -->
+                                    <img src="images/svg/new.svg" alt="item" width="15%">
+
+                                    <img class="click-me" src="images/svg/like.svg" alt="item" width="15%">
+                                    <!--    -->
+                                </div>
+
+                                <a href="product.html">
+                                    <!--  Image  -->
+                                    <img src="tmp/pluszak.png" class="img-fluid rounded-4 mt-3" alt="item">
+
+                                    <!--  Name  -->
+                                    <p class="text-start fw-bold text-secondary-emphasis fs-6 m-1">Teddy bear (prime
+                                        F778/K441)</p>
+                                </a>
+                            </div>
+
+                            <div class="px-1 flex-grow-1 d-flex flex-column justify-content-end">
+
+                                <!--  Price  -->
+                                <div>
+                                    <p class="fs-5 text-secondary float-xxl-end pt-xxl-2"><s>31,99 zł</s></p>
+                                    <p class="fs-3 text-black fw-bold">22,90 zł</p>
+                                </div>
+
+                                <!--  Availability and basket  -->
+                                <div class="d-flex flex-column flex-md-row m-1 me-2">
+                                    <!--    -->
+                                    <p class="fs-6 text-success align-self-md-end col-md-10">In stock</p>
+
+                                    <img class="click-me col-3 col-md-2 align-self-end" src="images/svg/cart.svg"
+                                        alt="basket icon" data-bs-toggle="modal" data-bs-target="#cartModal">
+                                    <!--    -->
+                                </div>
+                            </div>
+                            <!--    -->
+                        </div>
+                    </div>
+
+                    <div class="col px-1 d-xl-flex d-none align-items-stretch">
+                        <div class="border border-top-0 border-dark-subtle p-2 d-flex flex-column">
+                            <div class="flex-grow-0">
+                                <!--    -->
+                                <!--  Like and status  -->
+                                <div class="d-flex flex-row justify-content-between">
+                                    <!--    -->
+                                    <img src="images/svg/new.svg" alt="item" width="15%">
+
+                                    <img class="click-me" src="images/svg/like.svg" alt="item" width="15%">
+                                    <!--    -->
+                                </div>
+
+                                <a href="product.html">
+                                    <!--  Image  -->
+                                    <img src="tmp/pluszak.png" class="img-fluid rounded-4 mt-3" alt="item">
+
+                                    <!--  Name  -->
+                                    <p class="text-start fw-bold text-secondary-emphasis fs-6 m-1">Teddy bear (prime
+                                        F778/K441)</p>
+                                </a>
+                            </div>
+
+                            <div class="px-1 flex-grow-1 d-flex flex-column justify-content-end">
+
+                                <!--  Price  -->
+                                <div>
+                                    <p class="fs-5 text-secondary float-xxl-end pt-xxl-2"><s>31,99 zł</s></p>
+                                    <p class="fs-3 text-black fw-bold">22,90 zł</p>
+                                </div>
+
+                                <!--  Availability and basket  -->
+                                <div class="d-flex flex-column flex-md-row m-1 me-2">
+                                    <!--    -->
+                                    <p class="fs-6 text-success align-self-md-end col-md-10">In stock</p>
+
+                                    <img class="click-me col-3 col-md-2 align-self-end" src="images/svg/cart.svg"
+                                        alt="basket icon" data-bs-toggle="modal" data-bs-target="#cartModal">
+                                    <!--    -->
+                                </div>
+                            </div>
+                            <!--    -->
+                        </div>
+                    </div>
+
+                </div>
+                <p class="text-center fw-bold text-black fs-1 my-3">New Products</p>
+            </div>
+        </div>
+    </main>
+
+
+    <!--  Separator  -->
+    <hr>
+
+
+    <!--  Footer  -->
+    <footer class="mt-3">
+        <p class="fw-bold text-body c-huge-text my-3 mx-4">Contact:</p>
+
+        <!--  Phone and email  -->
+        <div class="row mx-2">
+
+            <!--  Phone  -->
+            <div class="col-lg-6 row">
+                <!--    -->
+                <div class="col-2">
+                    <img src="images/svg/phone.svg" class="img-fluid" alt="phone">
+                </div>
+                <!--  Info  -->
+                <div class="col-10">
+                    <p class="fs-2 text-dark">Mon. - Fri. 08:00 - 17:00</p>
+                    <p class="fs-1 fw-bold mt-2 text-danger">+48 123 456 779</p>
+                </div>
+                <!--    -->
+            </div>
+
+            <!--  Email  -->
+            <div class="col-lg-6 mt-4 mt-lg-0 row">
+                <!--    -->
+                <div class="col-2 align-items-center">
+                    <img src="images/svg/email.svg" class="img-fluid" alt="email">
+                </div>
+
+                <!--  Info  -->
+                <div class="col-10">
+                    <p class="fs-2 text-dark">24/7</p>
+                    <p class="fs-1 fw-bold mt-2 c-color-warning">contact@toyland.pl</p>
+                </div>
+                <!--    -->
+            </div>
+        </div>
+
+        <p class="text-center fw-bold text-body fs-5 mt-5 mb-3">Toy Land 2024&#8482</p>
+    </footer>
+
+    <script src="lib/bootstrap/bootstrap.bundle.min.js"></script>
+
+</body>
+
+</html>

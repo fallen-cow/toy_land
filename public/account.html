@@ -1,0 +1,281 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Toy Land - Account Page</title>
+    <link rel="icon" href="images/ico/favicon.ico" type="image/x-icon" />
+
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/animation.css">
+
+    <link rel="stylesheet" href="lib/bootstrap/bootstrap.min.css">
+    
+    <link rel="stylesheet" href="lib/leaflet/dist/leaflet.css" />
+
+
+
+</head>
+
+<body class="c-container">
+    <!--  Header  -->
+    <a href="index.html">
+        <div class="d-flex justify-content-center c-icon-background">
+            <img src="images/img/store_icon.png" class="img-fluid col-3 col-md-2 col-lg-1" alt="logo">
+        </div>
+    </a>
+
+    <!--  Body  -->
+    <div>
+        <div class="row">
+            <div class="col-12 col-xl-4">
+
+                <div class="row shadow-lg mx-2 mx-sm-3 ms-xl-5 px-2 py-3 mt-4 mt-md-5 d-flex d-xl-block rounded-4">
+
+                    <div class="d-flex justify-content-center align-items-center col-sm-5 col-xl-12">
+                        <img src="images/svg/user.svg" class="click-me img-fluid col-6" alt="user">
+                    </div>
+
+                    <!--  Data  -->
+                    <div class="mt-5 px-3 col-sm-7 col-xl-12 d-b">
+                        <!--    -->
+
+                        <div class="line-between">
+                            <!--    -->
+                            <p class="fs-4 text-dark">Name</p>
+
+                            <span class="line"></span>
+
+                            <p class="fs-3 text-black fw-bold">Denys</p>
+                            <!--    -->
+                        </div>
+
+                        <div class="line-between mt-3">
+                            <!--    -->
+                            <p class="fs-4 text-dark">Last name</p>
+
+                            <span class="line"></span>
+
+                            <p class="fs-3 text-black fw-bold">Matveyenko</p>
+                            <!--    -->
+                        </div>
+
+                        <div class="line-between mt-3">
+                            <!--    -->
+                            <p class="fs-4 text-dark">Login</p>
+
+                            <span class="line"></span>
+
+                            <p class="fs-3 text-black fw-bold">dm_12345</p>
+                            <!--    -->
+                        </div>
+
+                        <div class="line-between mt-3">
+                            <!--    -->
+                            <p class="fs-4 text-dark">Email</p>
+
+                            <span class="line"></span>
+
+                            <p class="fs-3 text-black fw-bold">dm@msn.com</p>
+                            <!--    -->
+                        </div>
+
+                        <div class="d-flex justify-content-center align-items-center mt-5">
+                            <button type="button" class="btn rounded-5
+                                        a-gradient-pass py-3 px-5 fs-2 fw-bold">Change password</button>
+                        </div>
+                        <!--    -->
+                    </div>
+                </div>
+
+                <div class="d-none d-xl-block">
+                    <p class="text-center fw-bold text-black fs-1 my-3">Product Return</p>
+                    <p class="text-center text-dark fs-4 ">Contact us by Email to arrange the return of the product, the
+                        assistant will respond within an hour</p>
+
+                    <!--    -->
+                    <div class="d-flex align-items-center flex-column mt-4">
+                        <img src="images/svg/email.svg" width="30%" alt="email">
+
+                        <p class="fs-1 fw-bold mt-2 c-color-warning">contact@toyland.pl</p>
+                    </div>
+                </div>
+
+                <!--    -->
+            </div>
+
+            <div class="col-12 col-xl-8">
+                <div class="shadow-lg mx-2 mx-sm-3 mx-xl-5 px-2 py-3 mt-4 mt-md-5 rounded-4">
+                    <div class="row my-3 mx-2">
+
+                        <div class="col-md col-12">
+                            <p class="text-start fw-bold text-black fs-1 mb-3">Delivery address</p>
+
+                            <p class="fs-3 text-dark mt-2">Country: <span class="fw-bold">Poland</span></p>
+                            <p class="fs-3 text-dark mt-2">Voivodeship: <span class="fw-bold">Masovian</span></p>
+                            <p class="fs-3 text-dark mt-2">Powiat: <span class="fw-bold">Siedlecki</span></p>
+                            <p class="fs-3 text-dark mt-2">Town: <span class="fw-bold">Siedlce</span></p>
+                            <p class="fs-3 text-dark mt-2">Address (house): <span class="fw-bold">Stanisława Konarskiego
+                                    11</span></p>
+                            <p class="fs-3 text-dark mt-2">Postal code: <span class="fw-bold">08-110</span></p>
+                        </div>
+
+                        <div id="map" class="col-md mt-4 mt-md-0 col-12" style="min-height: 300px">
+
+
+                            <!--  Temporary js code -->
+                            <!--  Temporary js code -->
+                            <!--  Temporary js code -->
+                            <!--   -->
+
+                            <script>
+                                document.addEventListener('DOMContentLoaded', function () {
+                                    const map = L.map('map').setView([52.172251, 22.282692], 12);
+
+                                    L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+                                        maxZoom: 19,
+                                        attribution: '© OpenStreetMap contributors'
+                                    }).addTo(map);
+
+                                    L.marker([52.172251, 22.282692]).addTo(map)
+                                        .bindPopup('Selected delivery address')
+                                        .openPopup();
+                                });
+
+                            </script>
+
+                            <!--   -->
+                            <!--  Temporary js code -->
+                            <!--  Temporary js code -->
+                            <!--  Temporary js code -->
+
+
+                        </div>
+
+                    </div>
+
+
+                </div>
+
+                <div class="row mt-4 mt-xl-5 mb-3 mx-3 mx-xl-5">
+                    <div class="col-12 col-md-6">
+                        <div class="c-products-list-down shadow-lg me-2 px-3 p-2 rounded-4">
+                            <p class="text-center fw-bold text-black fs-1 mt-1">Delivered packages</p>
+
+                            <p class="text-center fw-bold text-secondary fs-5 mt-5">Nothing here yet</p>
+                        </div>
+                    </div>
+
+
+                    <div class="col-12 col-md-6 mt-4 mt-md-0">
+                        <div class="c-products-list-down shadow-lg ms-2 px-3 p-2 rounded-4">
+
+                            <p class="text-center fw-bold text-black fs-1 mt-1">Packages on the way</p>
+
+                            <div class="row m-2 mt-5">
+                                <!--  Items  -->
+                                <!--  List of products  -->
+
+                                <div class="col-6 px-1 d-flex align-items-stretch ">
+                                    <div class="border border-top-0 border-dark-subtle p-2 d-flex flex-column">
+                                        <div class="flex-grow-0">
+                                            <!--    -->
+                                            <a href="product.html">
+                                                <!--  Image  -->
+                                                <img src="tmp/pluszak.png" class="img-fluid rounded-4 mt-3" alt="item">
+
+                                                <!--  Name  -->
+                                                <p class="text-start fw-bold text-secondary-emphasis fs-6 m-1">Teddy
+                                                    bear (prime F778/K441)</p>
+                                            </a>
+                                        </div>
+
+                                        <div class="px-1 flex-grow-1 d-flex flex-column justify-content-end">
+
+                                            <!--  Price  -->
+                                            <div>
+                                                <p class="fs-5 text-secondary float-xxl-end pt-xxl-2"><s>31,99 zł</s>
+                                                </p>
+                                                <p class="fs-3 text-black fw-bold">22,90 zł</p>
+                                            </div>
+                                        </div>
+                                        <!--    -->
+                                    </div>
+                                </div>
+
+                                <div class="col-6 px-1 d-flex align-items-stretch ">
+                                    <div class="border border-top-0 border-dark-subtle p-2 d-flex flex-column">
+                                        <div class="flex-grow-0">
+                                            <!--    -->
+                                            <a href="product.html">
+                                                <!--  Image  -->
+                                                <img src="tmp/roz_pluszak.png" class="img-fluid rounded-4 mt-3"
+                                                    alt="item">
+
+                                                <!--  Name  -->
+                                                <p class="text-start fw-bold text-secondary-emphasis fs-6 m-1">Red
+                                                    roses, Teddy bear (prime H118/L393)</p>
+                                            </a>
+                                        </div>
+
+                                        <div class="px-1 flex-grow-1 d-flex flex-column justify-content-end">
+
+                                            <!--  Price  -->
+                                            <div>
+                                                <p class="fs-5 text-secondary float-xxl-end pt-xxl-2"><s>31,99 zł</s>
+                                                </p>
+                                                <p class="fs-3 text-black fw-bold">22,90 zł</p>
+                                            </div>
+                                        </div>
+                                        <!--    -->
+                                    </div>
+                                </div>
+
+                                <div class="row mt-2 text-center">
+                                    <div class="col-6">
+                                        <p class="text-center ms-3 fw-bold text-secondary fs-4 my-1">x2 - 45.80 zł</p>
+                                    </div>
+
+                                    <div class="col-6">
+                                        <p class="text-center ms-3 fw-bold text-secondary fs-4 my-1">x1 - 17.99 zł</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="d-flex justify-content-center align-items-center mt-5">
+                            <button type="button" class="btn rounded-4
+                                        a-gradient-more text-white py-2 px-4 fs-4 fw-bold">
+                                More
+                                <img class="ms-2" src="images/svg/more.svg" alt="more">
+                            </button>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+
+
+        </div>
+    </div>
+
+    <div class="container d-block d-xl-none">
+        <p class="text-center fw-bold text-black fs-1 my-3">Product Return</p>
+        <p class="text-center text-dark fs-4 ">Contact us by Email to arrange the return of the product, the assistant
+            will respond within an hour</p>
+
+        <!--    -->
+        <div class="d-flex align-items-center flex-column mt-4">
+            <img src="images/svg/email.svg" width="30%" alt="email">
+
+            <p class="fs-1 fw-bold mt-2 c-color-warning">contact@toyland.pl</p>
+        </div>
+    </div>
+
+
+    <script src="lib/bootstrap/bootstrap.bundle.min.js"></script>
+    <script src="lib/leaflet/dist/leaflet.js"></script>
+</body>
+
+</html>
